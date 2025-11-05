@@ -1,12 +1,98 @@
-# React + Vite
+# WorldAtlas - Country Information Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React application that allows users to explore information about different countries around the world. Built with React, Vite, and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View detailed information about countries worldwide
+- Search countries by name
+- Filter countries by region
+- Responsive design for all devices
+- Dark mode support
+- Interactive country cards with detailed views
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 19
+- Vite 7
+- React Router DOM 7
+- Tailwind CSS 3
+- Axios
+- React Icons
+
+## Project Structure
+
+```
+world-info/
+├── public/
+│   └── images/
+│       └── world.jpg
+├── src/
+│   ├── api/
+│   │   ├── aboutCountry.json
+│   │   ├── footerData.json
+│   │   └── postApi.jsx
+│   ├── components/
+│   │   ├── layout/
+│   │   │   └── AppLayout.jsx
+│   │   └── UI/
+│   │       ├── CountryCard.jsx
+│   │       ├── CountryDetails.jsx
+│   │       ├── Footer.jsx
+│   │       ├── Header.jsx
+│   │       ├── Hero.jsx
+│   │       ├── Loader.jsx
+│   │       └── SearchCountry.jsx
+│   ├── Pages/
+│   │   ├── About.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Country.jsx
+│   │   └── Home.jsx
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.js
+└── vite.config.js
+```
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd world-info
+```
+
+2. Install dependencies:
+```bash
+bun install
+```
+
+3. Run the development server:
+```bash
+bun run dev
+```
+
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Scripts
+
+- `bun run dev` - Start development server
+- `bun run build` - Build for production
+- `bun run lint` - Run ESLint
+- `bun run preview` - Preview production build
+
+## API
+
+The project uses the [REST Countries API]([https://restcountries.com](https://restcountries.com/v3.1)) to fetch country data.
+
+## License
+
+This project is licensed under the MIT License.
