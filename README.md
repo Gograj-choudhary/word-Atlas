@@ -66,7 +66,7 @@ world-info/
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/Gograj-choudhary/word-Atlas
 cd world-info
 ```
 
@@ -80,7 +80,7 @@ bun install
 bun run dev
 ```
 
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+4. Open [http://localhost:5173](http://localhost:5173) or https://worldatlas-gr.netlify.app/ in your browser.
 
 ## Scripts
 
